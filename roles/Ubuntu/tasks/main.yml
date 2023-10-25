@@ -1,0 +1,11 @@
+  - name: Install Prometheus for Ubuntu
+    apt:
+      name: prometheus
+      state: latest
+
+  - name: Prometheus Start service
+    service:
+      name: prometheus
+      state: restarted
+      enabled: true
+
